@@ -1,0 +1,39 @@
+<p>player-update works!</p>
+
+<form [formGroup]="playerForm" (ngSubmit)="update()">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Champ</td>
+      <td>
+        <input type="text" formControlName="champ">
+      </td>
+    </tr>
+    <tr>
+      <td>KDA</td>
+      <td>
+        <input type="text" formControlName="kda">
+      </td>
+    </tr>
+    <tr>
+      <td>DES</td>
+      <td>
+        <input type="text" formControlName="des">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+       <button>
+         Update
+       </button>
+      </td>
+    </tr>
+
+  </table>
+</form>

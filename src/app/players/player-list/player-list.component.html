@@ -1,0 +1,25 @@
+<p>player-list works!</p>
+<h1>List Player</h1>
+<button routerLink="/create">Create Player</button>
+<table border="1">
+  <tr>
+    <td>ID</td>
+    <td>NAME</td>
+    <td>CHAPM</td>
+    <td colspan="3">ACTION</td>
+  </tr>
+  <tr *ngFor = "let player of players">
+    <td>{{player.id}}</td>
+    <td>{{player.name}}</td>
+    <td>{{player.kda}}</td>
+    <td>
+      <a [routerLink]="['/update/',player.id]">Update</a>
+    </td>
+    <td>
+      <a [routerLink]="['/delete/',player.id]">Delete</a>
+    </td>
+    <td>
+      <a [routerLink]="['/info/',player.id]">Info</a>
+    </td>
+  </tr>
+</table>

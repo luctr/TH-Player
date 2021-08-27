@@ -1,0 +1,39 @@
+<p>player-delete works!</p>
+<h1>Delete</h1>
+<form [formGroup]="playerForm" (ngSubmit)="delete(id)">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" formControlName="name" readOnly>
+      </td>
+    </tr>
+    <tr>
+      <td>Champ</td>
+      <td>
+        <input type="text" formControlName="champ" readOnly>
+      </td>
+    </tr>
+    <tr>
+      <td>KDA</td>
+      <td>
+        <input type="text" formControlName="kda" readOnly>
+      </td>
+    </tr>
+    <tr>
+      <td>DES</td>
+      <td>
+        <input type="text" formControlName="des" readOnly>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>
+          Delete
+        </button>
+      </td>
+    </tr>
+
+  </table>
+</form>
